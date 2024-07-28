@@ -1,0 +1,24 @@
+       static void Main(string[] args)
+        {           
+            double[] array = new double[10];
+            int i;
+
+            Console.WriteLine("ENTRE COM 10 VALORES: ");
+            for (i = 0; i < 10; i++)
+            {
+                array[i] = double.Parse(Console.ReadLine());
+            }
+
+            for (i = 0; i < 10; i++)
+            {
+                if (array[0] == array[i])
+                {            
+                    array[0]++;
+                }
+                else
+                {
+                    Console.WriteLine("VALORES IGUAIS ENTRADOS: " + array[i]);
+                }
+            }
+
+            Console.ReadKey();
