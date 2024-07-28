@@ -1,0 +1,34 @@
+        static void Main(string[] args)
+        {
+            int[] array = new int[10];
+            int i, soma = 0, vezes=0, media;
+
+            Console.WriteLine("ENTRE COM 10 VALORES INTEIROS: ");
+           for (i = 0; i < 10; i++)
+           {
+               array[i] = int.Parse(Console.ReadLine());
+           }
+
+           for (i = 0; i < 10; i++)
+           {
+               if (array[i] < 0)
+               {
+                   Console.WriteLine("NÃO É POSSÍVEL PROSSEGUIR COM O VALOR: " + array[i]);
+               }
+               else
+               {
+                   if (array[i] % 2 == 1)
+                   {
+                       soma += array[i];
+                       vezes++;
+                   }
+               }
+           }
+
+           if (vezes > 0)
+           {
+                media = soma / vezes;
+                Console.WriteLine("\nMÉDIA DOS VALORES ÍMPARES ENTRADOS: " + media);
+           }                
+           Console.ReadKey();            
+        }
