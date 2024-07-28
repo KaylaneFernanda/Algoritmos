@@ -1,0 +1,30 @@
+        static void Main(string[] args)
+        {
+            double[] provas = new double[20];
+            double media, soma = 0, vezes = 0, maior = 0;
+            int i;
+
+            for (i = 0; i < 20; i++)
+            {
+                Console.Write("ENTRE COM A NOTA DO " + (i + 1) + "º ALUNO: ");
+                provas[i] = double.Parse(Console.ReadLine());
+            }
+
+            for (i=0; i<20; i++)
+            {
+                soma += provas[i];
+                vezes++;
+            }
+            media = soma / vezes;
+            Console.WriteLine("MÉDIA DE NOTAS DOS ALUNOS: {0}", media);
+
+            for (i=0; i<20; i++)
+            {
+                if (provas[i] > maior)
+                {
+                    maior = provas[i];
+                }
+            }
+            Console.WriteLine("MAIOR NOTA: {0}", maior);
+            Console.ReadKey();
+        }
