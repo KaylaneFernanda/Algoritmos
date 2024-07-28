@@ -1,0 +1,18 @@
+  double[] numreais = new double[10];
+  double[] quadval = new double[10];            
+  int i; 
+
+  Console.WriteLine("ENTRE COM 10 NÚMEROS REAIS: ");
+  for (i=0; i<10; i++)
+  {
+      numreais[i] = double.Parse(Console.ReadLine());
+  }
+
+  for (i=0; i<10; i++)
+  {
+      quadval[i] = numreais[i] * numreais[i];                
+      Console.WriteLine("QUADRADO DO VALOR  " + numreais[i] + "  ENTRADO É: " + quadval[i]);
+      numreais[0]++;
+   }
+            
+   Console.ReadKey();
