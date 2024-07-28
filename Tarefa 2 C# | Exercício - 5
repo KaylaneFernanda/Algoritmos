@@ -1,0 +1,36 @@
+        static void Main(string[] args)
+        {
+            double[] provas = new double[15];
+            double j=1, soma=0, media=0, vezes=0, abaixom=0, vezes2=0;
+            
+            for (int i=0; i<15; i++)
+            {                               
+                Console.Write("ENTRE COM A " + j + "º NOTA: ");               
+                provas[i] = double.Parse(Console.ReadLine());
+                j++;
+            }            
+
+            for (int i=0; i<15; i++)
+            {                
+                soma += provas[i];
+                vezes++;                
+            }
+
+            if (vezes > 0)
+            {
+                media = soma / vezes;
+                Console.WriteLine("\nMÉDIA DOS ALUNOS É: " + media);
+            }
+
+            for (int i = 0; i < 15; i++)
+            {
+                if (provas[i] < 6)
+                {
+                    abaixom = ++provas[i];
+                    vezes2++;                 
+                }                             
+            }
+
+            Console.WriteLine("\nFICARAM ABAIXO DA MÉDIA: " + vezes2 + " ALUNOS");
+            Console.ReadKey();
+        }
