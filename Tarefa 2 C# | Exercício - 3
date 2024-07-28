@@ -1,0 +1,22 @@
+        static void Main(string[] args)
+        {
+
+            int[] array = new int[8];
+            int x, y, resultado;
+
+            Console.WriteLine("ENTRE COM 8 VALORES: ");
+
+            for (int i = 0; i<8; i++)
+            {
+                array[i] = int.Parse(Console.ReadLine());
+            }
+
+            x = array[0];
+            y = array[7];
+
+            Console.WriteLine("PRIMEIRO E ÚLTIMO VALOR ENTRADO SÃO: " + x + " E " + y);
+
+            resultado = x + y;
+            Console.WriteLine("SOMA DOS VALORES É: {0}", resultado);
+            Console.ReadKey();
+        }
