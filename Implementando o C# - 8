@@ -77,3 +77,36 @@
         {
             i4++;
         }
+            if (i2 > i1)
+            {
+                Console.WriteLine("\n\nCANDITADO 2 VENCEU A ELEIÇÃO COM " + i2 + " VOTOS!");
+            }
+
+            if (i1 == i2)
+            {
+                Console.WriteLine("\n\nCANDITADO 1 TEVE: " + i1 + " VOTOS E CANDITADO 2 TEVE: " + i2 + " VOTOS.");
+                Console.WriteLine("\n---------- EMPATE ENTRE OS CANDITADOS, NECESSÁRIO UMA NOVA ELEIÇÃO! ----------");
+            }
+
+            Console.ReadKey();
+        }
+
+        static void Voto_1 (ref int i1)
+        {
+            i1++;
+        }
+
+        static void Voto_2(ref int i2)
+        {
+            i2++;
+        }
+
+        static void Voto_3(ref int i3)
+        {
+            i3++;
+        }
+
+        static void Voto_4(ref int i4)
+        {
+            i4++;
+        }
