@@ -1,0 +1,53 @@
+
+        static void Main(string[] args)
+        {
+            double valorcheque = 0, valorcartao = 0, valordinheiro = 0, total = 0;
+            string chq = "cheque", car = "cartão", din = "dinheiro", formapag;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("\nENTRE COM A FORMA DE PAGAMENTO -> cheque, cartão ou dinheiro: ");
+                formapag = (Console.ReadLine());
+
+                if (formapag == chq)
+                {
+                    PagamentoCheque(ref valorcheque);
+                }
+
+                if (formapag == car)
+                {
+                    PagamentoCartao(ref valorcartao);
+                }
+
+                if (formapag == din)
+                {
+                    PagamentoDinheiro(ref valordinheiro);
+                }
+            }
+
+            total = valorcheque + valorcartao + valordinheiro;            
+
+            Console.WriteLine("\nVALOR GASTO EM CHEQUE: R$ {0}", valorcheque);
+            Console.WriteLine("VALOR GASTO EM CARTÃO: R$ {0}", valorcartao);
+            Console.WriteLine("VALOR GASTO EM DINHEIRO: R$ {0}", valordinheiro);
+            Console.WriteLine("\n\nVALOR TOTAL GASTO: R$ {0}", total);
+            Console.ReadKey();
+        }
+
+        static void PagamentoCheque(ref double valorcheque)
+        {
+            Console.Write("INFORME O VALOR GASTO EM CHEQUE: ");
+            valorcheque = double.Parse(Console.ReadLine());
+        }
+
+        static void PagamentoCartao(ref double valorcartao)
+        {
+            Console.Write("INFORME O VALOR GASTO EM CARTÃO DE CRÉDITO: ");
+            valorcartao = double.Parse(Console.ReadLine());
+        }
+
+        static void PagamentoDinheiro(ref double valordinheiro)
+        {
+            Console.Write("INFORME O VALOR GASTO EM DINHEIRO: ");
+            valordinheiro = double.Parse(Console.ReadLine());
+        }
