@@ -1,0 +1,25 @@
+
+            int[] array = new int[10];
+            int i;
+
+            Console.WriteLine("-------- INÍCIO DO PROGRAMA --------");
+
+            for (i = 0; i < 10; i++)
+            {
+                array[i] = i + 1;
+            }
+            Console.WriteLine("\nlista de Números de 1 a 10: ");
+
+            for (i = 0; i < 10; i++)
+            {                
+                Console.Write(array[i] + " ");
+            }
+            Console.WriteLine("\n\nLista de Números Pares de 10 a 1: ");
+
+            for (i = 0; i < 10; i--)
+            {                
+                if (array[i] % 2 == 0)
+                Console.Write(array[i] + " ");
+            }
+
+            Console.ReadKey();
