@@ -1,0 +1,15 @@
+   static void Main(string[] args)
+        {
+
+            Console.WriteLine("------- VAMOS CALCULAR A ÁREA DE UM TRIÂNGULO -------");
+            Console.Write("DÍGITE O VALOR DA BASE DO TRIÂNGULO: ");
+            double b = double.Parse(Console.ReadLine());
+            Console.Write("DÍGITE O VALOR DA ALTURA DO TRIÂNGULO: ");
+            double h = double.Parse(Console.ReadLine());
+
+            double a = b * h / 2;
+                        
+            Console.WriteLine("O VALOR DA SUA ÁREA É DE: {0}", a);
+            Console.ReadKey();
+            
+        }
