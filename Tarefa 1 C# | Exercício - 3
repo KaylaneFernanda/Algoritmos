@@ -1,0 +1,19 @@
+    static void Main(string[] args)
+        {
+            string n;
+            double s, v;
+            Console.Write("ESCREVA O NOME DO VENDEDOR(A): ");
+            n = Console.ReadLine();
+            Console.Write("ENTRE COM O VALOR DO SEU SALÁRIO FIXO: ");
+            s = double.Parse(Console.ReadLine());
+            Console.Write("INFORME O VALOR TOTAL DE VENDAS QUE REALIZA AO MÊS: ");
+            v = double.Parse(Console.ReadLine());
+
+            double c = 20 % v;
+            double sf = c + s;
+                        
+            Console.Write("O VENDEDOR(A): {0}, ", n);
+            Console.WriteLine("TEM SEU SALÁRIO FIXO EM R${0} E AO MÊS RECEBE R${1}", s, sf);   
+            Console.ReadKey();
+
+        }
