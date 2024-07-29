@@ -1,0 +1,28 @@
+   static void Main(string[] arg)
+   {
+       int idade;
+       Console.WriteLine("---- DESCUBRA A CATEGORIA QUE CADA JOGADOR PERTENCE ----");
+       Console.Write("INFORME A IDADE DO JOGADOR: ");
+       idade = int.Parse(Console.ReadLine());
+            
+       if (idade <= 13)
+       {
+           Console.WriteLine("ESTE JOGADOR PERTENCE A CATEGORIA IFANTIL");
+       }
+       else
+       {
+           if (idade <= 17 && >= 13)
+           {
+               Console.WriteLine("ESTE JOGADOR PERTENCE A CATEGORIA JUVENIL");
+           }
+           else
+           {
+               if (idade > 17)
+               {
+                   Console.WriteLine("ESTE JOGADOR PERTENCE A CATEGORIA SÊNIOR");
+               }
+           }
+    }
+    Console.ReadKey();
+
+        }
