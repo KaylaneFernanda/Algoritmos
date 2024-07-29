@@ -1,0 +1,25 @@
+     static void Main(string[] args)
+     {
+         int num1, num2;            
+         Console.WriteLine("--- ENTRE COM DOIS VALORES PARA COMPARAÇÃO ---");
+         Console.Write("ENTRE COM O PRIMEIRO VALOR INTEIRO: ");
+         num1 = int.Parse(Console.ReadLine());
+         Console.Write("ENTRE COM O SEGUNDO VALOR INTEIRO: ");
+         num2 = int.Parse(Console.ReadLine());   
+           if (num1 == num2)
+           {
+               Console.WriteLine("OS VALORES INFORMADOS SÃO IGUAIS");
+           }
+           else
+           {
+               if (num1 > num2)
+               {
+                   Console.WriteLine("O VALOR {0} É MAIOR QUE O VALOR {1}", num1, num2);
+               }
+               else
+               {
+                   Console.WriteLine("O VALOR {0} É MAIOR QUE O VALOR {1}", num2, num1);
+               }
+           }
+            Console.ReadKey();
+     }
