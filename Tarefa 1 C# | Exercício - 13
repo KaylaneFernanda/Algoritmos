@@ -1,0 +1,16 @@
+        static void Main(string[] args)
+        {
+            double num;
+            Console.Write("ENTRE COM UM VALOR NÚMERICO: ");
+            num = double.Parse(Console.ReadLine());
+
+            if (num > 100 && num < 200)
+            {
+                Console.WriteLine("O VALOR {0} ESTÁ ENTRE 1OO E 200", num);
+            }
+            else
+            {
+                Console.WriteLine("O VALOR {0} NÃO ESTÁ ENTRE 100 E 200", num);
+            }
+            Console.ReadKey();
+        }
