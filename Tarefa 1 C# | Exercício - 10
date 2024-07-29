@@ -1,0 +1,18 @@
+        static void Main(string[] args)
+        {
+
+            double num1, num2, num3, mt, media;
+            Console.WriteLine("------- DESCUBRA A MÉDIA DE TRÊS VALORES -------");
+            Console.Write("ENTRE COM O PRIMEIRO VALOR: ");
+            num1 = double.Parse(Console.ReadLine());
+            Console.Write("ENTRE COM O SEGUNDO VALOR: ");
+            num2 = double.Parse(Console.ReadLine());
+            Console.Write("ENTRE COM O TERCEIRO VALOR: ");
+            num3 = double.Parse(Console.ReadLine());
+
+            mt = num1 + num2 + num3;
+            media = mt / 3;
+
+            Console.WriteLine("MÉDIA DOS VALORES INFORMADOS É: {0}", media);
+            Console.ReadKey();
+        }
