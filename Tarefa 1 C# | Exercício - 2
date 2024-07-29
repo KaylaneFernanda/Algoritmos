@@ -1,0 +1,31 @@
+   static void Main(string[] args)
+   {
+double a, b = 0;
+
+Console.Write("DIGITE UM VALOR: ");
+a = double.Parse(Console.ReadLine());
+Console.Write("DIGITE O SEGUNDO VALOR: ");
+b = double.Parse(Console.ReadLine());
+
+double soma = a + b;
+double sub = a - b;
+double multi = a * b;
+double divisão = a / b;
+
+if (b != 0)
+{
+   Console.WriteLine("O RESULTADO EM SOMA É: {0}", soma);
+   Console.WriteLine("O RESULTADO EM SUBTRAÇÃO É: {0}", sub);
+   Console.WriteLine("O RESULTADO EM MULTIPLICAÇÃO É: {0}", multi);
+   Console.WriteLine("O RESULTADO EM DIVISÃO É: {0}", divisão);
+}
+else
+{
+   Console.WriteLine("O RESULTADO EM SOMA É: {0}", soma);
+   Console.WriteLine("O RESULTADO EM SUBTRAÇÃO É: {0}", sub);
+   Console.WriteLine("O RESULTADO EM MULTIPLICAÇÃO É: {0}", multi);
+   Console.WriteLine("NESTE CASO, NÃO É POSSÍVEL REALIZAR O RESULTADO EM DIVISÃO");
+}
+
+Console.ReadKey();
+   }
