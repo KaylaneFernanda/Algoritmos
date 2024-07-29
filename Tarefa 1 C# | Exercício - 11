@@ -1,0 +1,17 @@
+        static void Main(string[] args)
+        {
+            int x;
+            Console.WriteLine("------- DESCUBRA SE É PAR OU ÍMPAR -------");
+            Console.Write("ENTRE COM UM NÚMERO: ");
+            x = int.Parse(Console.ReadLine());
+
+            if (x % 2 == 0)
+            {
+                Console.WriteLine("NÚMERO {0} É PAR", x);
+            }
+            else
+            {
+                Console.WriteLine("NÚMERO {0} É ÍMPAR", x);
+            }
+            Console.ReadKey();
+        }
