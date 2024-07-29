@@ -1,0 +1,19 @@
+        static void Main(string[] args)
+        {
+            double xeroxfolha, valor1 = 0.50, valor2 = 0.30;
+            Console.Write("INFORME A QUANTIDADE DE XEROX REALIZADAS: ");
+            xeroxfolha = double.Parse(Console.ReadLine());
+
+            double total1 = valor1 * xeroxfolha;
+            double total2 = valor2 * xeroxfolha;
+           
+            if (xeroxfolha < 200 ) 
+            {
+                Console.WriteLine("O VALOR A SER PAGO É: R${0}", total1);
+            }
+            else
+            {
+                Console.WriteLine("O VALOR A SER PAGO É: R${0}", total2);
+            }
+            Console.ReadKey();
+        }
