@@ -1,0 +1,31 @@
+       static void Main(string[] args)
+        {
+            string nome;
+
+            double n1, n2, n3, n4, n, media;
+
+            Console.WriteLine("------- PARA CALCULAR A MÉDIA INFORME --------");
+            Console.Write("ENTRE COM O NOME DO ALUNO: ");
+            nome = Console.ReadLine();
+            Console.Write("ENTRE COM A PRIMEIRA NOTA: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.Write("ENTRE COM A SEGUNDA NOTA: ");
+            n2 = double.Parse(Console.ReadLine());
+            Console.Write("ENTRE COM A TERCEIRA NOTA: ");
+            n3 = double.Parse(Console.ReadLine());
+            Console.Write("ENTRE COM A QUARTA NOTA: ");
+            n4 = double.Parse(Console.ReadLine());
+
+            n = n1 + n2 + n3 + n4;
+            media = n / 4;
+
+            if (media >= 5)
+            {
+                Console.WriteLine("ALUNO: {0} APROVADO COM MÉDIA: {1}", nome, media);
+            }
+            else
+            {
+                Console.WriteLine("ALUNO: {0} REPROVADO COM MÉDIA: {1}", nome, media);
+            }
+            Console.ReadKey();
+        }
