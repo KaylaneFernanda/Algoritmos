@@ -1,0 +1,12 @@
+       static void Main(string[] args)
+        {
+            double tp_c, tp_f;
+            Console.WriteLine("------- CONVERTA CELCIUS EM FAHRENHEIT -------");
+            Console.Write("INFORME A TEMPERATURA EM CELCIUS: ");
+            tp_c = double.Parse(Console.ReadLine());
+
+            tp_f = (9 * tp_c + 160) / 5;
+
+            Console.WriteLine("TEMPERATURA EM FAHRENHEIT É: {0}", tp_f);
+            Console.ReadKey();
+        }
