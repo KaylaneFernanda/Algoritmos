@@ -1,0 +1,38 @@
+   static void Main(string[] args)
+   {
+      int a, b, c;
+      Console.WriteLine("------- ORGANIZE SEUS VALORES EM ORDEM CRESCENTE -------");
+      Console.Write("ENTRE COM O PRIMEIRO VALOR: ");
+      a = int.Parse(Console.ReadLine());
+      Console.Write("ENTRE COM O SEGUNDO VALOR: ");
+      b = int.Parse(Console.ReadLine());
+      Console.Write("ENTRE COM O TERCEIRO VALOR: ");
+      c = int.Parse(Console.ReadLine());
+
+      if (a < b && a < c && b > a && b < c && c > a && c > b)
+        {
+            Console.WriteLine("VALORES ORDENADOS: {0}, {1}, {2}", a, b, c);
+        }
+      if (a < c && a < b && c > a && c < b && b > a && b > c)
+        {
+            Console.WriteLine("VALORES ORDENADOS: {0}, {1}, {2}", a, c, b);
+         }
+      if (c < b && c < a && b > c && b < a && a > c && a > b)
+         {
+            Console.WriteLine("VALORES ORDENADOS: {0}, {1}, {2}", c, b, a);
+         }
+      if (c < a && c < b && a > c && a < b && b > c && b > a)
+         {                
+            Console.WriteLine("VALORES ORDENADOS: {0}, {1}, {2}", c, a, b);
+         }
+      if (b < c && b < a && c > b && c < a && a > c && a > b)
+         {
+            Console.WriteLine("VALORES ORDENADOS: {0}, {1}, {2}", b, c, a);
+         }
+      if (b < a && b < c && a > b && a < c && c > b && c > a)
+         {
+            Console.WriteLine("VALORES ORDENADOS: {0}, {1}, {2}", b, a, c);
+         }
+
+       Console.ReadKey();
+   }
