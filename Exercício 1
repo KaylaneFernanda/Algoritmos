@@ -1,0 +1,20 @@
+            int[] vetor = new int[10];
+            int i;
+
+            Console.WriteLine("-------- INÍCIO DO PROGRAMA --------");
+            Console.WriteLine("ENTRE COM DEZ VALORES INTEIROS: ");
+
+            for (i = 0; i < 10; i++)
+            {
+                vetor[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (i = 0; i < 10; i++)
+            {
+                if (vetor[i] % 2 == 1)
+                {
+                    Console.WriteLine("OS NÚMEROS ÍMPARES ENTRADOS SÃO: {0}", vetor[i]);
+                }
+
+            }
+            Console.ReadLine();
